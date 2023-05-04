@@ -6,14 +6,18 @@ import { NavigatorRoutesProps } from 'src/routes';
 import LogoImage from '@assets/codeleap_logo_black.png';
 import { storageUserGet } from '@storage/storageUser';
 import { AppError } from '@utils/AppError';
+import { useDispatch } from 'react-redux';
+import { updateUser } from '@redux/userSlice';
 
 export function Splash() {
-  const toast = useToast();
   const { reset } = useNavigation<NavigatorRoutesProps>();
+  const toast = useToast();
+  const dispatch = useDispatch();
 
   async function loadUserData() {
     try {
       const user = await storageUserGet();
+      dispatch(updateUser(user?.name));
       reset({
         index: 0,
         routes: [{ name: user?.name ? 'home' : 'signIn' }],

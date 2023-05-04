@@ -14,6 +14,7 @@ module.exports = function (api) {
             '@dtos/*': ['src/dtos/*'],
             '@storage': './src/storage',
             '@utils': './src/utils',
+            '@redux': './src/redux',
           },
         },
       ],

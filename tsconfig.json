@@ -9,7 +9,8 @@
       "@assets/*": ["./src/assets/*"],
       "@dtos/*": ["src/dtos/*"],
       "@storage/*": ["./src/storage/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@redux/*": ["./src/redux/*"]
     }
   }
 }
