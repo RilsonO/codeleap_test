@@ -10,7 +10,8 @@
       "@dtos/*": ["src/dtos/*"],
       "@storage/*": ["./src/storage/*"],
       "@utils/*": ["./src/utils/*"],
-      "@redux/*": ["./src/redux/*"]
+      "@redux/*": ["./src/redux/*"],
+      "@services/*": ["./src/services/*"]
     }
   }
 }
