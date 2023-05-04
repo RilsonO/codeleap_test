@@ -10,6 +10,7 @@ module.exports = function (api) {
           alias: {
             '@components': './src/components',
             '@pages': './src/pages',
+            '@assets': './src/assets',
           },
         },
       ],
