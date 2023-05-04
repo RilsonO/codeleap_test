@@ -7,6 +7,7 @@ import {
 } from '@expo-google-fonts/roboto';
 import { THEME } from './src/theme';
 import { Loading } from '@components/Loading';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
@@ -18,15 +19,7 @@ export default function App() {
         backgroundColor={'transparent'}
         translucent
       />
-      {fontsLoaded ? (
-        <Center flex={1}>
-          <Text fontFamily={'bold'} fontSize='xl'>
-            Hello codeleap
-          </Text>
-        </Center>
-      ) : (
-        <Loading />
-      )}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   );
 }
