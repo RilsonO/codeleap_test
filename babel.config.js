@@ -9,6 +9,7 @@ module.exports = function (api) {
           root: ['./src'],
           alias: {
             '@components': './src/components',
+            '@pages': './src/pages',
           },
         },
       ],
